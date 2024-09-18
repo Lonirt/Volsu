@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'proximanova_black';
+  src:  url('fonts/proximanova_black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'proximanova_black', sans-serif;
+}
