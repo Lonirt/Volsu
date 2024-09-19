@@ -27,8 +27,8 @@
             background-image: url('https://cdn.builder.io/api/v1/image/assets%2F2fe4147bb8c843bb8ebba475c8973899%2F04fd6cb1d8f949f5bcf74076c232a4e7');
             background-size: cover;
             background-position: center;
-            height: 150vh;
-            width: 100%;
+            height: auto;
+            display: block;
         }
         .hidden-text {
           display: none; 

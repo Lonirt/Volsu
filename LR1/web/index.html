@@ -8,6 +8,7 @@
     <title>charity: water | Help Bring Clean and Safe Water and Sanitation to Communities</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/default.css">
+    <script src="js/default.js"></script>
 </head>
 <body> 
   <nav class="navbar navbar-expand-md navbar-light bg-white">  
@@ -134,8 +135,11 @@
         </div>  
     </div>  
 </nav>
-<div class="background d-flex justify-content-center align-items-center">
+<div class="background">
   <div class="container">
+    <div class="content-box">
+      <h1>ㅤㅤㅤㅤ</h1>
+      </div>
     <div class="content-box custom-bg p-4 rounded shadow text-center custom-rectangle">
       <h1>100% of your gift funds clean and safe drinking water</h1>
       <h6>We're on a mission to bring clean water to the 703 million</h6>
@@ -240,7 +244,15 @@
          <img src="img/234.png"> Secure Payment · This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
       </div>
     </div>
+    <div class="col-md-12" custom;">
+      <div class="row"> 
+        <div class="col-4 ml-auto mr-3" style="height: 100px;"></div>
+      
+    </div>
   </div>
+  <div class="content-box">
+    <h1>ㅤㅤㅤㅤ</h1>
+    </div>
 </div>
 <div class="col-md-12" style="background-color:rgba(250, 247, 240, 0.979);">
 
@@ -354,78 +366,7 @@
 </div>
 </div>
 </div>
-
-
 </body>
 </html>
 
 
-
-
-<script src="js/bootstrap.bundle.min.js"></script>
-<script>
-  function updateDonationText() {
-    const amountInput = document.getElementById('customAmountMonthly');
-    const donationText = document.getElementById('donation-text');
-    
-    let amount = parseFloat(amountInput.value);
-    if (isNaN(amount) || amount <= 0) {
-      amount = 40;
-    }
-    const people = Math.floor(amount / 3.33);    
-    donationText.innerHTML = `Your <span class="fw-bold">$${amount.toFixed(2)}</span> monthly donation can give <span class="fw-bold">${people} people</span> clean water every year. 100% funds water projects.`;
-  }
-  document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll('.custom-btn');
-    buttons.forEach(button => {
-      button.addEventListener('click', function () {
-        buttons.forEach(btn => btn.classList.remove('active'));
-        this.classList.add('active');
-      });
-    });
-  });
- document.addEventListener('DOMContentLoaded', function() {
-            const amountButtons = document.querySelectorAll('.btn.custom-btn');
-            const donationText = document.getElementById('donation-text');
-            
-            amountButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const amount = this.getAttribute('data-amount');
-                    const people = this.getAttribute('data-people');
-                    const amountText = amount ? `$${amount}.00` : '';
-                    const peopleText = people ? `${people} people` : '0 people';
-                    donationText.querySelector('span.fw-bold').textContent = amountText;
-                    donationText.querySelectorAll('span.fw-bold')[1].textContent = peopleText;
-                });
-            });
-        });
-        var isTextChanged = false;
-
-        var isTextChanged = false;
-
-document.getElementById('sponsor-btn').addEventListener('click', function() {
-    var sponsorText = document.getElementById('sponsor-text');
-    sponsorText.innerHTML = 'Bring clean water to an entire community or school. To learn more, <a href="#" style="color: black;" >click here</a>.';
-    isTextChanged = true;
-});
-
-var amountButtons = document.querySelectorAll('[id^="amount-"]');
-amountButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-        var sponsorText = document.getElementById('sponsor-text');
-        if (isTextChanged) {
-            sponsorText.innerHTML = 'It only takes $40 to bring 1 person reliable access to the clean water they deserve.';
-            isTextChanged = false;
-        }
-    });
-});
-
-document.getElementById('other-amount-btn').addEventListener('click', function() {
-    var sponsorText = document.getElementById('sponsor-text');
-    if (isTextChanged) {
-        sponsorText.innerHTML = 'It only takes $40 to bring 1 person reliable access to the clean water they deserve.';
-        isTextChanged = false;
-    }
-});А;   
-  
-</script>
